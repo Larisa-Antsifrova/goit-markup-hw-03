@@ -358,19 +358,23 @@ body {
 
 .clients li {
 	display: flex;
-	height: 90px;
-	width: 170px;
-	justify-content: center;
-	align-items: center;
-
-	border: 1px solid #afb1b8;
-	border-radius: 4px;
 }
 
 .clients li:not(:last-child) {
 	margin-right: 30px;
 }
 
+.clients a {
+	display: flex;
+	height: 90px;
+	width: 170px;
+
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+}
 /* Footer section */
 /* Added background color for footer to see the text in white */
 .footer-positioning {
