@@ -375,7 +375,7 @@ body {
 /* Added background color for footer to see the text in white */
 .footer-positioning {
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 }
 
 .footer-contacts-block {
