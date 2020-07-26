@@ -522,7 +522,7 @@ body {
 	padding-left: 24px;
 }
 
-.portfolio-projects h2 {
+.portfolio-project-information h2 {
 	margin-top: 0px;
 	margin-bottom: 4px;
 
@@ -534,7 +534,7 @@ body {
 	color: var(--primary-title-color);
 }
 
-.portfolio-projects p {
+.portfolio-project-information p {
 	margin-top: 0px;
 	margin-bottom: 0px;
 
@@ -545,7 +545,7 @@ body {
 	color: var(--primary-text-color);
 }
 
-.portfolio-projects p.project-description {
+/* .portfolio-project-information p.project-description {
 	margin-top: 0px;
 	margin-bottom: 0px;
 
@@ -557,7 +557,7 @@ body {
 .portfolio-projects .project-description:hover {
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
-}
+} */
 
 input[type="submit"] {
 	min-width: 200px;
