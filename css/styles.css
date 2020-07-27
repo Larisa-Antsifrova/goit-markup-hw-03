@@ -45,7 +45,7 @@ body {
 /* Header */
 
 /* Site navigation */
-.header-positioning {
+.header-flexbox {
 	display: flex;
 	align-items: center;
 }
@@ -212,6 +212,14 @@ body {
 	padding-top: 30px;
 }
 
+.advantages > li {
+	width: calc((100% - 30px * 3) / 4);
+}
+
+.advantages > li:not(:nth-child(4n)) {
+	margin-right: 30px;
+}
+
 .advantages img {
 	display: block;
 	padding: 25px 100px;
@@ -242,14 +250,6 @@ body {
 	color: var(--primary-text-color);
 }
 
-.advantages > li {
-	width: 270px;
-}
-
-.advantages > li:not(:last-child) {
-	margin-right: 30px;
-}
-
 /* Title for all sections but Hero */
 .section-title {
 	margin: 0px 0px 50px;
@@ -269,6 +269,15 @@ body {
 
 .services {
 	display: flex;
+	flex-wrap: wrap;
+}
+
+.services > li {
+	width: calc((100% - 30px * 2) / 3);
+}
+
+.services > li:not(:nth-child(3n)) {
+	margin-right: 30px;
 }
 
 .services img {
@@ -290,14 +299,6 @@ body {
 	background-color: rgba(47, 48, 58, 0.8);
 }
 
-.services > li {
-	width: 370px;
-}
-
-.services > li:not(:last-child) {
-	margin-right: 30px;
-}
-
 /* Team section */
 .secondary-background {
 	background-color: var(--secondary-bg-color);
@@ -305,15 +306,16 @@ body {
 
 .team {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .team-card {
-	width: 270px;
+	width: calc((100% - 30px * 3) / 4);
 
 	background-color: var(--primary-white-color);
 }
 
-.team-card:not(:last-child) {
+.team-card:not(:nth-child(4n)) {
 	margin-right: 30px;
 }
 
@@ -361,14 +363,18 @@ body {
 /* Clients section */
 .clients {
 	display: flex;
+	flex-wrap: wrap;
 }
 
-.clients img {
-	display: block;
+.clients li {
+	width: calc((100% - 30px * 5) / 6);
 }
 
-.clients li:not(:last-child) {
+.clients li:not(:nth-child(6n)) {
 	margin-right: 30px;
+	.clients img {
+		display: block;
+	}
 }
 
 .clients a {
