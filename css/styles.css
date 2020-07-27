@@ -390,13 +390,28 @@ body {
 	background-color: var(--footer-bg-color);
 }
 
-.footer-positioning {
+.footer-felxbox {
 	display: flex;
+	justify-content: space-between;
 	align-items: baseline;
 }
-/* Address and contacts */
+
+/* Footer blocks */
+.footer-information {
+	width: calc((100% - 30px) / 2);
+}
+
+.footer-information:not(:last-child) {
+	margin-right: 30px;
+}
+
+/* Address and social media */
 .footer-contacts-block {
-	margin-right: 69px;
+	width: calc((100% - 30px) / 2);
+}
+
+.footer-contacts-block:not(:last-child) {
+	margin-right: 30px;
 }
 
 .address {
@@ -428,10 +443,6 @@ body {
 }
 
 /* Call to action */
-.footer-social-links {
-	margin-right: auto;
-}
-
 .call-to-action {
 	margin-top: 0px;
 	margin-bottom: 20px;
@@ -444,17 +455,19 @@ body {
 	color: var(--primary-white-color);
 }
 
-.footer-social-links-items {
+.footer-social-links-list {
 	display: flex;
 }
 
-.footer-social-links-items > li:not(:last-child) {
+.footer-social-links-list > li:not(:last-child) {
 	margin-right: 34px;
 }
 
-/* .call-to-action.form {
-	margin-bottom: 8px;
-} */
+/* Footer form block */
+.form {
+	display: flex;
+	justify-content: flex-end;
+}
 
 /* Portfolio page */
 /* Filter */
