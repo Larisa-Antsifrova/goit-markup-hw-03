@@ -382,9 +382,10 @@ body {
 
 .clients li:not(:nth-child(6n)) {
 	margin-right: 30px;
-	.clients img {
-		display: block;
-	}
+}
+
+.clients img {
+	display: block;
 }
 
 .clients a {
